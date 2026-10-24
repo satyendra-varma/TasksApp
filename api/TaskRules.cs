@@ -6,6 +6,6 @@ public static class TaskRules
 
     public static bool IsValidTitle(string? title)
     {
-        return !string.IsNullOrWhiteSpace(title) && title.Trim().Length <= MaxTitleLength;
+        return !string.IsNullOrWhiteSpace(title) && title.Trim().Length < MaxTitleLength;
     }
 }
